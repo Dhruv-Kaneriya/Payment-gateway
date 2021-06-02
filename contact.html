@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">The Sparks Donation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contact.html">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function validation()
+        {
+             var name=document.getElementById("name").value;
+             var email=document.getElementById("email").value;
+             var subject=document.getElementById("subject").value;
+             var message=document.getElementById("message").value;
+             
+             if(name=="")
+             {
+                 alert("Please Enter Name");
+             }
+             else if(email=="")
+             {
+                 alert("Please Enter Email Id");
+             }
+             else if(subject=="")
+             {
+                 alert("Please Enter subject");
+             }
+             else if(message=="")
+             {
+                 alert("Please Write Message");
+             }
+             else 
+             {
+                 alert("Message Send Successfully");
+             }
+        }
+        </script>
+
+<h1 class="contact-title">Contact Details</h1>
+
+    <section class="contact_area section_gap" style="padding:100px 70px 20px 70px;">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="contact_info">
+                    <div class="info_item">
+                        <i class="fa fa-home"></i>
+                        <h6 style="color:blue;">Dhruv Kaneriya</h6>
+          
+                    </div><br>
+                    <div class="info_item">
+                        <i class="fa fa-phone"></i>
+                        <h6><a href="#" style="color:blue;">8758812492</a></h6>
+                 
+                    </div><br>
+                    <div class="info_item">
+                        <i class="fa fa-envelope"></i>
+                        <h6><a href="#" style="color:blue;">Contactus@sparksfoundation</a></h6>
+                        
+                    </div><br>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <form class="row contact_form" id="contactForm" novalidate="novalidate">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <button type="submit" id="send-button" value="submit" class="btn btn-outline-danger" onclick="validation()" >Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer>
+        <p>Copyright &copy; 2021</p>
+    </footer>
+</body>
+</html>

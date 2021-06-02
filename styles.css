@@ -1,0 +1,56 @@
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 15px;
+  }
+ #content{
+     text-align: center;
+ }
+ #main-img{
+     height: 70%;
+     margin-top: 50px;
+ }
+ #title{
+     margin-top: 150px;
+     margin-bottom: 17px;
+     color: rgb(233, 64, 64)
+ }
+ #send-button{
+     margin-top: 15px;
+ }
+ .contact-title{
+     text-align: center;
+     margin-top: 20px;
+     color: rgb(233, 64, 64);
+ }
+ .form-group{
+     margin-top: 9px;
+     
+ }
+ .footer{
+     text-align: center;
+     color: rgb(233, 64, 64);
+ }
+ #copyright{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 15px;
+ }
+ .donation-text{
+     text-align: center;
+ }
+ .donate{
+     margin-left: 40px;
+     margin-top: 150px;
+     margin-bottom: 15px;
+     color: rgb(233, 64, 64);
+ }
+ .donation-img{
+     margin-left: 160px;
+     margin-top: 130px;
+ }
